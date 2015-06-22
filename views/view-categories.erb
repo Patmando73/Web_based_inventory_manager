@@ -1,0 +1,12 @@
+<h1>This is a list of all the categories.</h1>
+
+
+
+
+<% all = Category.all %>
+<% all.each do |b| %>
+    <p> <%="#{b.type}"%></p>
+<% end %>
+
+
+<a href="/home">GO HOME!</a>

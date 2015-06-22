@@ -1,0 +1,12 @@
+<h1>This is a list of all the locations.</h1>
+
+
+
+
+<% all = StoreLocation.all %>
+<% all.each do |b| %>
+<p> <%="#{b.store_num} #{b.city}"%></p>
+<% end %>
+
+
+<a href="/home">GO HOME!</a>

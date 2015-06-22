@@ -1,0 +1,8 @@
+<h1>This is a list of all the products.</h1>
+  <% all =  Product.all%>
+  <% all.each do |d|%>
+      <p> <%="sku: #{d.sku}, model: #{d.model}, brand: #{d.brand}, quantity: #{d.quantity}, cost: #{d.cost}, category_id: #{d.category_id}, store_location_id: #{d.store_location_id}"%></p>
+   <% end %>
+
+
+<a href="/home">GO HOME!</a>
