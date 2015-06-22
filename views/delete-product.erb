@@ -1,0 +1,7 @@
+<h2>Click which product you would like to delete?</h2>
+
+<ul>
+  <% Product.all.each do |b| %>
+    <li><a href="/delete-product/<%= b.id %>"><%= b.model %> - <%= b.cost%> - <%= b.category_id%> - <%= b.store_location_id%></a></li>
+  <% end %>
+</ul>

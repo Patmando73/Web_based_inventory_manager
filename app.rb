@@ -28,6 +28,39 @@ get "/save-category" do
   erb :"save-category"
 end
 
+get "/delete-product" do
+  erb :"delete-product"
+end
+
+get "/delete-product/:x" do
+  @d = Product.new(params["x"].to_i)
+
+  @d.delete
+  erb :"delete-success"
+end
+
+
+get "/delete-location/:x" do
+  @d = StoreLocation.new(params["x"].to_i)
+
+  @d.delete_location
+  erb :"delete-success"
+end
+
+
+get "/delete-category/:x" do
+  @d = Category.new(params["x"].to_i)
+
+  @d.delete_category
+  erb :"delete-success"
+end
+
+
+
+
+
+
+
 get "/view-product" do
   erb :"view-products"
 end

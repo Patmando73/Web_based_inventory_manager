@@ -1,0 +1,7 @@
+<h2>Click which category you would like to delete?</h2>
+
+<ul>
+  <% Category.all.each do |b| %>
+      <li><a href="/delete-category/<%= b.id %>"><%= b.type %></a></li>
+  <% end %>
+</ul>

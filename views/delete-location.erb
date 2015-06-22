@@ -1,0 +1,7 @@
+<h2>Click which location you would like to delete?</h2>
+
+<ul>
+  <% StoreLocation.all.each do |b| %>
+      <li><a href="/delete-location/<%= b.id %>"><%= b.store_num %> - <%= b.city%></a></li>
+  <% end %>
+</ul>
